@@ -1,0 +1,12 @@
+@import '../shared/colors';
+
+.navbar {
+  flex: 0 1 20px;
+  background-color: $primaryColor;
+  width: 100%;
+  text-align: center;
+
+  h2 {
+    color: white;
+  }
+}

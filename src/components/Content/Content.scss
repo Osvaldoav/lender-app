@@ -1,0 +1,63 @@
+.container {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.content {
+  height: 100%;
+  width: 93vh;
+  min-height: 500px;
+  min-width: calc(max(535px, 93vh));
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: 24fr 74fr 22fr;
+  grid-template-rows: 17fr 15fr repeat(3, 11fr) 27fr 8fr;
+  grid-template-areas: 
+  "today-date   today-result today-result" 
+  "results-date results-date results-date"
+  "transactions transactions balance"
+  "transactions transactions income"
+  "transactions transactions outcome"
+  "transactions transactions summary"
+  "transactions transactions comments";
+  gap: 15px;
+  padding: 20px;
+}
+
+.today-date-card {
+  grid-area: today-date
+}
+
+.today-result-card {
+  grid-area: today-result;
+}
+
+.results-date-card {
+  grid-area: results-date
+}
+
+.transactions-card {
+  grid-area: transactions;
+}
+
+.balance-card {
+  grid-area: balance;
+}
+
+.income-card {
+  grid-area: income;
+}
+
+.outcome-card {
+  grid-area: outcome;
+}
+
+.summary-card {
+  grid-area: summary;
+}
+
+.comments-card {
+  grid-area: comments;
+}
